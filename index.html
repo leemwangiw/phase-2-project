@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherWise</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <script defer src="index.js"></script>
+    <script defer src="key.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="main">
+        <video id="background-video" src="videoplayback (3).mp4" autoplay loop muted>
+        </video>
+        <nav id="nav">
+            <div id="logo">
+                <img src="home (1).png" alt="Logo">
+            </div>
+            <ul id="ul">
+                <li><a href="#main">Home</a></li>
+                <li><a href="#weather">Weather</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+        </nav>
+        <div id="blog">
+            <p class="blog">
+                Discover Your Travel Destination's Weather at a Glance
+                Planning a trip? Whether you’re a seasoned traveler or planning your first adventure, WeatherWise is here to make your travel experience smoother and more enjoyable. Our goal is to provide you with accurate and up-to-date weather information for any city worldwide, helping you to make informed decisions about your travel plans.
+            </p>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="container">
+            <div class="search-container">
+                <input
+                    type="text"
+                    placeholder="Enter a city name"
+                    id="city"
+                    value="Mumbai"
+                />
+                <button id="search-btn">Search</button>
+            </div>
+            <div id="result"></div>
+        </div>
+    </div>
+    <div class="contacts">
+        <div class="overlay">
+<div class="container2">
+<img src="https://www.trustedreviews.com/wp-content/uploads/sites/54/2024/01/Asus-ROG-Phone-8-Pro-Edition-12-scaled.jpg"   alt="">
+</div>
+</div>
+    </div>
+</body>
+</html>
