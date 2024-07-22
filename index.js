@@ -41,7 +41,7 @@ let getWeather = async () => {
                 </div>
                 <div class="additional-info">
                     <h4>Humidity: ${data.main.humidity}%</h4>
-                    <h4>Wind Speed: ${data.wind.speed} m/s</h4>
+                    <h4 id="wind">Wind Speed: ${data.wind.speed} m/s</h4>
                 </div>
             `;
         } else {
