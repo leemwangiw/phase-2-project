@@ -98,6 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const weatherMenuItem = document.querySelector('#ul li:nth-child(2)'); // Assuming the second item is "weather"
     const contactsMenuItem = document.querySelector('#ul li:nth-child(3)'); // Assuming the third item is "contacts"
     const wrapper = document.querySelector('.wrapper');
+    const contacts = document.querySelector('.contact');
 
     homeMenuItem.addEventListener('click', () => {
         alert('You are there');
@@ -117,7 +118,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     contactsMenuItem.addEventListener('click', () => {
-        alert('Coming Soon');
+        contacts.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        wrapper.classList.add('highlight');
         // Alternatively, you can insert a message into the DOM:
         // displayComingSoonMessage();
     });

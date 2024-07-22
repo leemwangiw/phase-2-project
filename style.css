@@ -207,12 +207,12 @@ body {
         box-shadow: 0 0 20px rgba(15, 228, 210, 0.8);
     }
     100% {
-        box-shadow: 0 0 0 rgba(15, 236, 181, 0.5);
+        box-shadow: 0 0 0 rgba(6, 255, 193, 0.5);
     }
 }
 
 .highlight {
-    animation: highlightAnimation 3s ease-in-out;
+    animation: highlightAnimation 1s ease-in-out;
 }
 .contacts {
     width: 100px;
@@ -284,4 +284,18 @@ border-radius: 5px;
 #search-btn :hover {
 background: aqua;
 transition: 0.5s;
+}
+.contact h4 {
+padding: 0px;
+background-color: rgba(99, 99, 99, 0.3);
+color: aqua;
+position: absolute;
+align-items: center;
+width: 100%;
+display: flex;
+justify-content: center;
+margin-top: 1px;
+}
+.contact {
+
 }
