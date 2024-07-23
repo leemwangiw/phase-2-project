@@ -54,6 +54,12 @@ let getWeather = async () => {
 
 searchBtn.addEventListener("click", getWeather);
 window.addEventListener("load", getWeather);
+cityRef.addEventListener("keydown",() =>{
+    if(event.key === 'Enter'){
+        getWeather();
+    }
+}
+)
 
 document.addEventListener('DOMContentLoaded', () => {
     const homeMenuItem = document.querySelector('#ul li:nth-child(1)'); // Assuming the first item is "home"
