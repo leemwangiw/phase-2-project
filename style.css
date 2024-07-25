@@ -129,9 +129,6 @@ body {
     border-color: white;
 }
 
-
-
-
 #result h2 {
     color: white;
     text-transform: uppercase;
@@ -214,26 +211,26 @@ body {
 .highlight {
     animation: highlightAnimation 1s ease-in-out;
 }
+
 .contacts {
     width: 100px;
     height: 205px;
+}
 
-}
-.container2 img{
+.container2 img {
     display: block;
-    width: 1349px; 
-height: 200px; 
-object-fit: cover;
-object-position: 25% 25%;
-z-index: -1;
-margin-top: 0px;
-object-position: 25% 25%; 
-position: relative;
-border-radius: 5px;
+    width: 100%; /* Adjusted for responsiveness */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover;
+    object-position: 25% 25%;
+    z-index: -1;
+    margin-top: 0px;
+    border-radius: 5px;
 }
+
 .overlay {
-    width: 1349px; /* Full width (cover the whole page) */
-    height: 100%; /* Full height (cover the whole page) */
+    width: 100%; /* Adjusted for responsiveness */
+    height: 100%; /* Full height */
     top: 0;
     left: 0;
     right: 0;
@@ -242,18 +239,14 @@ border-radius: 5px;
     z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
     cursor: pointer; /* Add a pointer on hover */
 }
+
 #bg {
     position: absolute;
     z-index: -1;
-   width: 1349px;
-    height: 600px;
+    width: 100%; /* Adjusted for responsiveness */
+    height: auto; /* Maintain aspect ratio */
 }
-@media screen and (max-width: 850px) {
-    #blog {
-        width: 95%;
-        margin-left: 2.5%;
-    }
-}
+
 .weather {
     color: rgba(13, 229, 236, 0.8);
     text-transform: uppercase;
@@ -265,40 +258,116 @@ border-radius: 5px;
     padding: 0.5em; /* Optional: adds some padding for better readability */
     border-radius: 0.5em; /* Optional: rounds the corners */
 }
+
 .wrapper {
     background-color: rgba(0, 0, 0, 0.6); /* Adjust color and opacity as needed */
-     /* Optional: adds padding inside the wrapper */
     border-radius: 0.5em; /* Optional: rounds the corners */
 }
+
 #wind {
     padding: 0px;
     margin: 0px;
 }
-#search-btn  {
+
+#search-btn {
     color: #ffffff;
     background-color: transparent;
     margin-top: 20px;
-    cursor: pointer; 
+    cursor: pointer;
     margin-right: 300px;
 }
-#search-btn :hover {
-background: aqua;
-transition: 0.5s;
+
+#search-btn:hover {
+    background: aqua;
+    transition: 0.5s;
 }
+
 .contact h4 {
-padding: 0px;
-background-color: rgba(99, 99, 99, 0.3);
-color: aqua;
-position: absolute;
-align-items: center;
-width: 100%;
-display: flex;
-justify-content: center;
-margin-top: 1px;
+    padding: 0px;
+    background-color: rgba(99, 99, 99, 0.3);
+    color: aqua;
+    position: absolute;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1px;
 }
+
 .overlay2 {
     background-color: rgba(27, 26, 26, 0.5); /* Black background with opacity */
-    z-index: -2; 
-    width: 1349px; /* Full width (cover the whole page) */
-    height: 100%; /* Full height (cover the whole page) */
+    z-index: -2;
+    width: 100%; /* Adjusted for responsiveness */
+    height: 100%; /* Full height */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 850px) {
+    #blog {
+        width: 95%;
+        margin-left: 2.5%;
+    }
+
+    #nav ul {
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    #nav ul li {
+        margin: 10px 0;
+    }
+
+    .search-container {
+        grid-template-columns: 1fr;
+    }
+
+    #search-btn {
+        margin-right: 0;
+    }
+
+    .container2 img {
+        width: 410%;
+    }
+    .overlay,
+    #bg {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #nav ul li {
+        font-size: medium;
+    }
+
+    #blog p {
+        font-size: 1em;
+    }
+
+    #result h1 {
+        font-size: 3em;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #nav ul li {
+        font-size: small;
+    }
+
+    #blog p {
+        font-size: 0.9em;
+    }
+
+    #result h1 {
+        font-size: 2.5em;
+    }
+
+    .weather,
+    .desc {
+        font-size: 0.8em;
+    }
+
+    .search-container input {
+        font-size: 0.8em;
+    }
 }
